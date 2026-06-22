@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9ff;
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #6a0dad;
+    color: white;
+    position: fixed;
+    padding: 20px;
+}
+.sidebar h2 {
+    text-align: center;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.sidebar ul li:hover {
+    background-color: #8136c5;
+}

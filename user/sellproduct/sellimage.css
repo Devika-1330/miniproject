@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #4B0FBA;
+  --secondary-color: #d1c4ff;
+  --font-family: Arial, sans-serif;
+  --background-gradient: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.containersell{
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.form-container {
+  width: 600px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px 0px;
+}
+
+
+
+.form-container h2 {
+  color: var(--primary-color);
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-label {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(75, 15, 186, 0.4);
+}
+
+.button-sell {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button-sell:hover {
+  background: var(--background-gradient);
+  transform: scale(1.05);
+}
+
+#counter {
+  display: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-top: 10px;
+}

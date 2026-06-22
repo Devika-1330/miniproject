@@ -1,0 +1,345 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#status-sec{
+    display: none;
+}
+.status-sec {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width:100%;
+    max-width: 600px;
+    margin: auto;
+    position: absolute;
+    top:30%;
+    right:30%;
+    z-index: 999;
+}
+.close-change{
+    width:100%;
+    display: flex;
+    justify-content: right;
+}
+.close-change button{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+.status-opt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.status-opt select {
+width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+#reserveopt{
+    display: none;
+
+   
+}
+#saleCancel{
+    display: none;
+}
+#cancelsaleopt{
+    display: none;
+    position: fixed; /* Ensures it covers the whole viewport */
+    top: 50%;
+    left: 20%;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    z-index: 1000; /* Ensures it's on top */
+
+}
+#saleremove{
+    display: none;
+    position: fixed; /* Ensures it covers the whole viewport */
+    top: 50%;
+    left: 20%;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    z-index: 1000; /* Ensures it's on top */
+}
+.status-btn {
+    width: 100%;
+    padding: 10px;
+    background: #4B0FBA;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.status-btn:hover {
+    background: #0056b3;
+}
+.qlty
+{
+    width: auto;
+    max-width: 150px;
+    text-align: center;
+    background:#4B0FBA;
+    color:white;
+ border-radius: 25px;
+}
+.product {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.image-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.image-gallery {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 600px;
+    justify-content: center; 
+   
+}
+
+.image-gallery img {
+    flex-basis: 250px; 
+    height: 250px;
+    width:250px;
+    border: 1px solid;
+}
+.image-gallery img:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    background-color: #f9f9f9;
+}
+.badges {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.details-section {
+    flex: 1;
+}
+
+.details-section h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    color: #4B0FBA;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-left: 10px;
+}
+
+.discount {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.bttn {
+    background: #4B0FBA;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.highlights, .quality-info, .assurance-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.highlights p, .quality-info p {
+    margin: 5px 0;
+}
+
+.assurance-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+}
+
+.assurance-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+}
+.assurance-item i{
+    font-size: 38px;
+    color:#4B0FBA;
+}
+
+.description {
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 200px;
+    margin: 30px 0px;
+}
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+    overflow: hidden; 
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    }
+    
+    #modal img {
+    width: 45%;  
+    height: 75%;
+    object-fit: fill; 
+    }
+.modal-right{
+    display: flex;
+    justify-content: right;
+    margin: 0px 50px 0px 0px;
+}
+  #modal button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 75px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+  }
+  
+  #modal button:hover {
+    color: #ccc;
+  }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px;
+    }
+
+    .image-gallery {
+        width: 100%;
+        justify-content: center; /* Center images */
+    }
+
+    .image-gallery img {
+        flex-basis: 100%; /* Make images take full width */
+        max-width: 250px; /* Ensure they don't exceed 250px */
+        height: auto; /* Keep aspect ratio */
+    }
+
+    .details-section h1 {
+        font-size: 20px;
+    }
+
+    .bttn {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .assurance-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .assurance-item {
+        width: 100%; /* Make assurance items take full width */
+    }
+
+    .description {
+        height: auto; /* Let description grow naturally */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .details-section h1 {
+        font-size: 18px;
+    }
+
+    .bttn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .image-gallery img {
+        width: 100%; /* Images take full width */
+        height: auto;
+    }
+
+    .product {
+        gap: 10px;
+    }
+}

@@ -1,0 +1,336 @@
+
+:root {
+    --primary-color: #4B0FBA;
+    --secondary-color: #d1c4ff;
+    --font-family: 'Poppins', sans-serif;
+    --bg-light: #f8f9fa;
+    --text-dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: linear-gradient(135deg, var(--bg-light), #f2f4f7);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+.mainsec
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    width: 85%;
+    max-width: 1300px; 
+
+}
+
+.chat-opt {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.chat-opt button {
+    flex: 1;
+    max-width: 50%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    background: white;
+    color: var(--primary-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chat-opt button:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.chat-opt button.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Container */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Sidebar */
+.sidebar1 {
+    display: flex;
+    padding: 20px;
+    gap:10px;
+}
+
+.sidebar1 h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.sidebar1 p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.sidebar1 button.active {
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.sidebar1 button {
+    flex: 1;
+    max-width: 180px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Main Content */
+.book-section {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.book-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.book-section h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    background: #fafafa;
+    margin-bottom: 15px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container-image img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+}
+
+.cart-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cart-details p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.cart-details strong {
+    color: var(--primary-color);
+}
+
+.soldOrReserve {
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    width: 120px;
+    background: orangered;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 150px;
+}
+
+.cart-actions button, .cart-actions a {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.details-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.details-btn:hover {
+    background: #3a0a91;
+}
+
+.cart-actions a.details-btn {
+    background: white;
+    color: green;
+    border: 1px solid green;
+}
+
+.cart-actions a.details-btn:hover {
+    background: green;
+    color: white;
+}
+
+.cart-actions button[style*="orangered"] {
+    background: orangered;
+    color: white;
+}
+
+.cart-actions button[style*="orangered"]:hover {
+    background: #d94500;
+}
+
+.center-text {
+    text-align: center;
+    padding: 40px;
+}
+
+.center-text img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.center-text p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar1 {
+        width: 100%;
+    }
+
+    .chat-opt {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .chat-opt button {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .chat-opt {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .chat-opt button {
+        max-width: 100%;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-details {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .cart-actions {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-container-image img {
+        width: 80px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-section h3 {
+        font-size: 20px;
+    }
+
+    .cart-details p {
+        font-size: 12px;
+    }
+
+    .cart-actions button, .cart-actions a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .profile-container-image img {
+        width: 60px;
+        height: 90px;
+    }
+
+    .soldOrReserve {
+        width: 100px;
+        font-size: 10px;
+    }
+}

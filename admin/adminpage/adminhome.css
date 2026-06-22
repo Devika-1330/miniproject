@@ -1,0 +1,126 @@
+
+.main-content h1{
+    margin: 15px;
+}
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px;
+}
+.card h3 {
+    color: #6a0dad;
+}
+.table-container {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #6a0dad;
+    color: white;
+}
+/* Main container for the request list */
+.request-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Each request item (book request) */
+.request-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures horizontal alignment */
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.request-item:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Styling for the book details */
+.details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Title styling */
+.details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.details strong {
+    color: #6a0dad;
+}
+
+/* Accept Button */
+.btn {
+    background: #6a0dad;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    white-space: nowrap; /* Prevents button text from wrapping */
+}
+
+.btn:hover {
+    background: #8136c5;
+}
+#totalbooks{
+    cursor: pointer;
+}
+#totalbooks:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    .request-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

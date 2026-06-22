@@ -1,0 +1,7 @@
+For the registration 
+
+> Name
+> Email
+> Password
+
+
